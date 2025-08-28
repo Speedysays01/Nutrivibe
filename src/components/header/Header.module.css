@@ -1,0 +1,187 @@
+/* Header wrapper */
+.header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  padding: 1.5rem 0;
+  position: relative;
+  z-index: 50;
+  position: absolute;
+    background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  width: 100vw;
+  position: fixed;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ 
+}
+
+/* Logo */
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  color: #22c55e; /* green-500 */
+}
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #16a34a; /* green-600 */
+  text-decoration: none;
+}
+
+/* Desktop Nav */
+.nav {
+  display: none;
+
+}
+.nav a {
+  color: #4b5563; /* gray-600 */
+  text-decoration: none;
+  margin-left: 1.5rem;
+  transition: color 0.2s ease;
+}
+.nav a:hover {
+  color: #16a34a; /* green-600 */
+}
+.cta {
+  background: #22c55e;
+  color: #fff !important;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  margin-left: 1.5rem;
+  transition: background 0.2s ease;
+}
+.cta:hover {
+  background: #16a34a;
+}
+
+/* Mobile menu button */
+.menuButton {
+  display: block;
+  padding: 0.5rem;
+  border: none;
+  background: transparent;
+  color: #4b5563;
+  cursor: pointer;
+}
+.menuButton:hover {
+  background: #f3f4f6; /* gray-100 */
+  border-radius: 6px;
+}
+.menuIcon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Mobile Nav */
+.mobileNav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      background: rgba(255, 255, 255, 0.15); /* semi-transparent white */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+}
+.mobileNav a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  font-weight: bolder;
+}
+.mobileNav a:hover {
+  color: #16a34a;
+}
+.mobileNav .cta {
+  text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    align-items: center;
+     
+  }
+  .menuButton {
+    display: none;
+  }
+  .mobileNav {
+    display: none;
+  }
+}
+
+
+/* Mobile Nav Sidebar */
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 250px; /* sidebar width */
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 2px 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  transform: translateX(-100%); /* hidden by default */
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+
+.mobileNav.open {
+  transform: translateX(0); /* slide in */
+}
+
+.mobileNav a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.mobileNav a:hover {
+  color: #16a34a;
+}
+
+.mobileNav .cta {
+  margin-top: auto; /* push CTA to bottom */
+  text-align: center;
+}
+
+
+/* Mobile Sidebar Close Button */
+.closeButton {
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-bottom: 2rem;
+  transition: color 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #16a34a;
+}

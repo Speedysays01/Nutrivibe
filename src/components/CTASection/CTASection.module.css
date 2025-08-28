@@ -1,0 +1,56 @@
+.ctaSection {
+  padding: 4rem 1.5rem;
+  background: linear-gradient(to bottom right, #2563eb, #16a34a); /* blue-600 to green-600 */
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+.description {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .description {
+    font-size: 1.25rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1.25rem 2.5rem;
+  background: white;
+  color: #15803d; /* green-700 */
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-radius: 9999px; /* full pill shape */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+  background: #f3f4f6; /* gray-100 */
+  transform: scale(1.05);
+}
