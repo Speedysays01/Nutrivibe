@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import styles from "./Hero.module.css";
-import HeroImage from "./Hero.jpg";
+import HeroImage from "./hero.jpg";
 
 // Variants for staggered children animation
 const containerVariants = {
