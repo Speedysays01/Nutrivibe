@@ -1,5 +1,5 @@
 import styles from "./Hero.module.css";
-import HeroImage from "./Hero.jpg"; // Import the image
+import HeroImage from "./hero.jpg"; // Import the image
 
 export default function Hero() {
   return (
